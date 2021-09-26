@@ -25,12 +25,12 @@
                         <legend>Envie-nos uma Mensagem</legend>
                         <p>
                             <label for="nome">Nome Completo <strong><abbr title="obrigatório">*</abbr></strong></label>
-                            <input type="text" name="nome" id="nome" placeholder="Felipe Flip Flap" required>
+                            <input type="text" name="nome" id="nome" placeholder="Felipe Flip Flap" required="">
                         </p>
                         
                         <p>
                             <label for="telefone">Telefone <strong><abbr title="obrigatório">*</abbr></strong></label>
-                            <input type="number" name="telefone" id="telefone" placeholder="55 DDD 8888-7445" required>
+                            <input type="number" name="telefone" id="telefone" placeholder="55 DDD 8888-7445" required="">
                             <input pattern="^\d{2}\s?\d{3}\s?\d{4}-?\d{4}$" type="tel" >
                             <br>
                             <!-- 1 required só?-->
@@ -43,18 +43,18 @@
                         </p>
                         <p>
                             <label for="email">Email <strong><abbr title="obrigatório">*</abbr></strong></label>
-                            <input type="email" name="email" id="email" placeholder="email@email.com" required>
+                            <input type="email" name="email" id="email" placeholder="email@email.com" required="">
                         </p>
 
                         <p>
                             <label for="cidade">Cidade <strong><abbr title="obrigatório">*</abbr></strong></label>
-                            <input type="text" name="cidade" id="cidade" placeholder="Jurassic Park" required>
+                            <input type="text" name="cidade" id="cidade" placeholder="Jurassic Park" required="">
                         </p>
 
                         <p>
                             <!-- trocar por um select!! -->
                             <label for="estado">Selecione seu Estado <strong><abbr title="obrigatório">*</abbr></strong></label>
-                            <select name="estado" id="estado" required>
+                            <select name="estado" id="estado" required="">
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
                                 <option value="AP">Amapá</option>
@@ -92,7 +92,7 @@
 
                         <p>
                             <label for="mensagem">Digite sua Mensagem <strong><abbr title="obrigatório">*</abbr></strong></label>
-                            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua Mensagem Aqui!" required></textarea>
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua Mensagem Aqui!" required=""></textarea>
                         </p>
 
                         <input type="submit" value="Enviar">
