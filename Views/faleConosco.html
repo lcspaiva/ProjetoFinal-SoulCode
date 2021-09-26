@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enroter</title>
+    </head>
+    <body>
+        <header id="cabecalho">
+            <h1>ENROTER - Tudo na vida é um ciclo</h1>
+        </header>
+    
+        <nav>
+            <a href="home.html">[Home] </a> <a>[Saiba Mais] </a>   <a href="faleConosco.html">    [Fale Conosco]  </a>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Fale Conosco</h2>
+                <form id="formulario">
+                    <fieldset>
+                        <legend>Envie-nos uma Mensagem</legend>
+                        <p>
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" name="nome" id="nome" placeholder="Felipe Flip Flap">
+                        </p>
+                        
+                        <p>
+                            <label for="telefone">Telefone</label>
+                            <input type="number" name="telefone" id="telefone" placeholder="550088887445">
+                            <br>
+                            <input type="radio" id="Residencial" name="tipoTelefone" value="residencial">
+                            <label for="Residencial">Residencial</label>
+                            <input type="radio" id="Comercial" name="tipoTelefone" value="comercial">
+                            <label for="Comercial">Comercial</label>
+                            <input type="radio" id="Celular" name="tipoTelefone" value="celular">
+                            <label for="Celular">Celular</label>
+                        </p>
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="email@email.com">
+                        </p>
+
+                        <p>
+                            <label for="cidade">Cidade</label>
+                            <input type="text" name="cidade" id="cidade" placeholder="Jurassic Park">
+                        </p>
+
+                        <p>
+                            <!-- trocar por um select!! -->
+                            <label for="estado">Selecione seu Estado</label>
+                            <select name="estado" id="estado">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="assunto">Assunto</label>
+                            <input type="text" name="assunto" id="assunto" placeholder="Exemplo">
+                        </p>
+
+                        <p>
+                            <label for="mensagem">Digite sua Mensagem</label>
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua Mensagem Aqui!"></textarea>
+                        </p>
+
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer id="rodape">
+            Onde Estamos:
+            <address>
+                Alameda Sauron da Silva Sauro, Nº9000, Bolha2 - Atlântida, 58848-257.
+                <br>
+                Fone: +00 (00) 2255-8815, das 14:00 até as 14:05.
+            </address>
+            <p> 
+                <em>Copyright: Todos os direitos reservados ©</em>
+            </p>
+            <p>
+                <a href="#cabecalho">[Voltar ao Topo]</a>
+            </p>
+        </footer>
+    </body>
+</html>

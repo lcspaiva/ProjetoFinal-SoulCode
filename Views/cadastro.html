@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycl-Us</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <!--colocar-->
+    <form action="">
+        <p>
+            <fieldset>
+                <legend>Nome</legend>
+                <label for="nome">Nome/Empresa</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+            </fieldset>      
+        </p>
+        <p>
+            <fieldset>
+                <legend>Operação</legend>
+                <input type="radio" name="operacao" id="op1" value="Residencial" checked>
+                <label for="op1">Residencial</label>
+
+                <input type="radio" name="operacao" id="op2" value="Cooperativa">
+                <label for="op2">Cooperativa</label>
+
+                <input type="radio" name="operacao" id="op3" value="Empresa">
+                <label for="op3">Empresa</label>
+
+                <input type="radio" name="operacao" id="op4" value="Coletor Individual">
+                <label for="op4">Coletor Individual</label>
+            </fieldset>  
+        </p>
+        <p>
+            <fieldset>
+                <legend>Info para contato</legend>
+                <p>
+                    <label for="Rua">Rua</label>
+                    <input type="text" name="endereco" id="rua" placeholder="Rua da Silva Sauro">
+                </p>
+                <p>
+                    <label for="numero">Numero</label>
+                    <input type="number" name="numero" id="numero" placeholder="83">
+                </p>
+                
+                <p>
+                    <label for="Cidade">Cidade</label>
+                    <select name="cidade" id="cidade">
+                    <option>Selecione sua Cidade</option>
+                    <option value="Campina Grande"> Campina Grande</option>
+                    <option value="João Pessoa">Jampa</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <fieldset>
+                        <legend>Estado</legend>
+                        <input type="radio" name="estado" id="estado" checked disabled >
+                        <label for="estado">Paraíba</label>
+                    </fieldset>
+                </p>
+                <p>
+                    <label for="cep">CEP</label>
+                    <input type="number" name="cep" id="cep" placeholder="11111222">
+                </p>
+                <p>
+                    <label for="telefone">Telefone</label>
+                    <input type="number" name="telefone" id="telefone" placeholder="08311112222">
+                </p>
+            </fieldset>
+        </p>
+        <button type="submit">Concluir</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
