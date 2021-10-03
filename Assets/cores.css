@@ -1,0 +1,16 @@
+.cores{
+    color: #FFFFFF; /* rgb(255, 255, 255) */
+        color: #99BE34; /* rgb(153, 190, 52)  */
+        color: #1e6c2b; /* RGB (30,108,43 ) main? */ 
+    color: #424143; /* rgb(66, 65, 67)    */ 
+    color: #E7E9E1; /* rgb(231, 233, 225) */
+    color: #C5D695; /* rgb(197, 214, 149) */
+    color: #969697; /* rgb(150, 150, 151) */
+}
+
+/* 
+main: rgb(231, 233, 225)
+banner: rgb(153, 190, 52)
+aside:  rgb(197, 214, 149) ou rgb(150, 150, 151)
+footer: rgb(66, 65, 67)
+*/
