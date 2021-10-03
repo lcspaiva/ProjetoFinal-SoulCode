@@ -12,17 +12,20 @@
 
     <body>
         <header class="header">
-            <!-- logo -->
-            <div id="logo">
-                <a href="#home.html"><img src="../Assets/teste.jpg" alt=""></a> 
-            </div>
-            <!-- lema da empresa -->
-            <div id="lema"> 
-                <!-- <h1>Enroter</h1> -->
-                <h2>"Tudo na vida é um ciclo ..."</h2>
-            </div>
-            <!-- imagem de preenchimento -->
-            <div id="imgEnch"></div>
+            <!--  flex box container-->
+            <div class="flexboxContainerHeader">
+                <!-- logo -->
+                <div class="flexboxItemLogo"></div>
+                
+                <!-- lema da ORG -->
+                <div class="flexboxItemLema">
+                    <h1>Enroter</h1>
+                    <h2>"Tudo na vida é um ciclo ..."</h2>
+                </div>
+
+                <!-- img de preenchimento -->
+                <div class="flexboxItemImgEnch"></div>
+             </div>
         </header>
     
         <nav class="nav">
@@ -46,12 +49,14 @@
                     <h2>Fale Conosco</h2>
                     <fieldset>
                         <legend>Envie-nos uma Mensagem</legend>
+                        <!-- campo nome -->
                         <p>
                             <label for="nome">Nome/Nome Social <strong><abbr title="obrigatório">*</abbr></strong></label>
                             <br>
                             <input type="text" name="nome" id="nome" placeholder="Felipe Flip Flap" required="">
                         </p>
                         
+                        <!-- dados do telefone -->
                         <p>
                             <label for="telefone">Telefone <strong><abbr title="obrigatório">*</abbr></strong></label>
                             <br>
@@ -66,22 +71,25 @@
                             <label for="Comercial">Comercial</label>
                             <input type="radio" id="Celular" name="tipoTelefone" value="celular">
                             <label for="Celular">Celular</label>
-                        </p>
                         <br>
+                        </p>
+                        
+                        <!-- campo email -->
                         <p>
                             <label for="email">Email <strong><abbr title="obrigatório">*</abbr></strong></label>
                             <br>
                             <input type="email" name="email" id="email" placeholder="email@email.com" required="">
                         </p>
 
+                        <!-- campo cidade -->
                         <p>
                             <label for="cidade">Cidade <strong><abbr title="obrigatório">*</abbr></strong></label>
                             <br>
                             <input type="text" name="cidade" id="cidade" placeholder="Jurassic Park" required="">
                         </p>
 
+                        <!-- select do estado -->
                         <p>
-                            <!-- trocar por um select!! -->
                             <label for="estado">Selecione seu Estado <strong><abbr title="obrigatório">*</abbr></strong></label>
                             <br>
                             <select name="estado" id="estado" required="">
@@ -116,12 +124,42 @@
                             </select>
                         </p>
 
+                        <!-- select da faixa etaria -->
+                        <p>
+                            <label for="faixaEtaria">Faixa Etaria <strong><abbr title="obrigatório">*</abbr></strong></label>
+                            <br>
+                            <select name="faixaEtaria" id="faixaEtaria" required>
+                                <option selected="true" disabled="disabled">Selecione sua Faixa Etaria</option>
+                                <option value="1">0 à 10</option>
+                                <option value="2">11 a 25</option>
+                                <option value="3">26 a 40</option>
+                                <option value="4">41 a 56</option>
+                                <option value="5">57 ou mais</option>
+                            </select>
+                        </p>
+
+                        <!-- select da competencia (tipo do usuario) -->
+                        <p>
+                            <label for="competencia">Habilidades<strong><abbr title="obrigatório">*</abbr></strong></label>
+                            <br>
+                            <select name="competencia" id="competencia">
+                                <option selected="true" disabled="disabled">Selecione o tipo de usuário</option>
+                                <option value="residencia">residência</option>
+                                <option value="catador">catador</option>
+                                <option value="comercio">comércio</option>
+                                <option value="empresa">empresa</option>
+                                <option value="cooperativa">cooperativa</option>
+                            </select>
+                        </p>
+
+                        <!-- input do assunto -->
                         <p>
                             <label for="assunto">Assunto</label>
                             <br>
                             <input type="text" name="assunto" id="assunto" placeholder="Exemplo">
                         </p>
 
+                        <!-- textarea da mensagem -->
                         <p>
                             <label for="mensagem">Digite sua Mensagem <strong><abbr title="obrigatório">*</abbr></strong></label>
                             <br>

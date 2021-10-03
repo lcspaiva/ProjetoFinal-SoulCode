@@ -24,7 +24,8 @@ body{
         "footer footer footer"
     ;
     /* 548px 600px  auto; */
-    grid-template-columns: 43% 42%  auto;
+    /*43% 42%  auto */
+    grid-template-columns: 3fr 3fr 1fr;
     grid-template-rows: auto auto auto;
 }
 
@@ -80,6 +81,54 @@ body{
     color: white;
 }
 
+/* **********************************************/
+/* Definição dos elementos que comporão o aside */
+/* ******************HEADER***********************/
+/* ******************FLEXBOX**********************/
+/* **********************************************/
+.flexboxContainerHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* justify-content: ?; */
+    /* align-items: ?; */
+}
+
+/* definição da "caixa" que conterá o logo */
+.flexboxItemLogo{
+    width: 200px;
+    height: 200px;
+    background-image: url("../../Assets/teste.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: auto;
+    flex-shrink: 3;
+}
+
+/* definição da "caixa" que conterá o lema*/
+.flexboxItemLema{
+    width: 600px;
+    height: 140px;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-left: 60px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* definição da "caixa" que conterá a img de preenchimento */
+.flexboxItemImgEnch{
+    width: 350px;
+    height: 200px;
+    background-image: url("../../Assets/colage.png");
+    background-position: top center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 3;
+}
 
 /* *********************************************************** */
 /* *********************************************************** */
@@ -145,11 +194,15 @@ a.navLink{
     color: black;
 }
 
+
+/* *********************************************************** */
+/********************** FOOTER  ********************************/
+/* *********************************************************** */
 /* definindo o flexbox para o footer */
 .flexContainerFoot{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content:center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -179,7 +232,7 @@ a.navLink{
     text-align: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap; /* testar se muda de volta*/
+    flex-wrap: wrap; /* testar se muda de volta*/
     justify-content: flex-start; /* testar a melhor opção*/
     /* justify-content: center; */
     align-items: center;
@@ -256,7 +309,9 @@ ul:nth-child(2){
     list-style-type: circle;
 }
 
-
+/* **********************************************/
+/* ******************FORM************************/
+/* **********************************************/
 /* itens do formulario */
 .fonteDestaque{
     line-height: 1.6;
@@ -271,15 +326,10 @@ ul:nth-child(2){
 }
 
 .flexboxContainerForm{
-    /* font-size: x-large; */
-    /* font-weight: bold; */
     text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap; /* testar se muda de volta*/
-    /*justify-content: flex-start;  testar a melhor opção*/
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .flexboxItemForm{
@@ -288,7 +338,6 @@ ul:nth-child(2){
     height: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
-    /* border-bottom: 3px solid rgb(202, 200, 200); */
     font-weight: normal;
     margin-top: 10px;
     line-height: 1.5;
