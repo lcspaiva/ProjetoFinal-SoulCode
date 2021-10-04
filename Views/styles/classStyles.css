@@ -380,7 +380,9 @@ legend{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+.bordaForm{
+    border: 2px solid darkgreen;
+}
 .buttonForm{
     color: white;
 }
