@@ -3,22 +3,63 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="Enroter, Logistica Reversa, Sustentabilidade">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/classStyles.css">
+        <link rel="stylesheet" type="text/css" href="styles/idsStyles.css">
         <title>Enroter</title>
     </head>
-    <body>
-        <header id="cabecalho">
-            <h1>ENROTER - Tudo na vida é um ciclo</h1>
+    <body> 
+
+        <!-- Alterar -->
+        <!-- ADD RESPONSIVIDADE (media query e vai estilizando com % nos itens que quebrar) -->
+        <!-- quais tamanhos de telas mais comuns -->
+        <!-- display: flex em vez de grid?-->
+        <!-- trocar pixel por em ou rem  ou %-->
+        <!-- mexer nas medidas que estão travadas (aside)-->
+        <!-- tirar brs, colocar line-height, margin, padding -->
+
+        <header class="header">
+            <!--  flex box container-->
+            <div class="flexboxContainerHeader">
+                <!-- logo -->
+                <div class="flexboxItemLogo"></div>
+                
+                <!-- lema da ORG -->
+                <div class="flexboxItemLema">
+                    <h1>Enroter</h1>
+                    <h2>"Tudo na vida é um ciclo ..."</h2>
+                </div>
+
+                <!-- img de preenchimento -->
+                <div class="flexboxItemImgEnch"></div>
+             </div>
         </header>
 
-        <nav>
-            <a>[Home] </a> <a href="saibaMais.html">[Saiba Mais] </a>   <a href="faleConosco.html">    [Fale Conosco]  </a>
+        <nav class="nav">
+            <div class="flexContainerNav">
+                <div class="flexItemNav"><a href="home.html" class="navLink buttonNav">Home</a> </div>
+                <div class="flexItemNav"><a href="saibaMais.html" class="navLink buttonNav">Saiba Mais</a></div>
+                <div class="flexItemNav"><a href="faleConosco.html" class="navLink buttonNav">Fale Conosco</a></div>
+            </div>
         </nav>
 
-        <main id="corpo">
+        <main class="main">
             <section>
-                <article>
-                    <h2>O que fazemos</h2>
+                <div class="menuIndice">
+                    <h3>Navegação Rápida</h3>
+                    <ul>
+                        <a href="#oqFazemos"    class="botaoIndice"><li>O que fazemos?</li></a>
+                        <a href="#comoFunfa"    class="botaoIndice"><li>Como Funciona</li></a>
+                        <a href="#nossaMissao"  class="botaoIndice"><li>Nossa Missão</li></a>
+                        <a href="#oqeh"         class="botaoIndice"><li>O que é Logística Reversa?</li></a>
+                        <a href="#consumidor"   class="botaoIndice"><li>O consumidor</li></a>
+                        <a href="#empresas"     class="botaoIndice"><li>As empresas</li></a>
+                    </ul>
+                </div>
+
+                <article class="artigo">
+                    <h2 id="oqFazemos">O que fazemos?</h2>
                     <p>
                         A Enroter é focada na <strong>logística reversa de dispositivos eletrônicos</strong> tais como:
                         <ul>
@@ -34,8 +75,8 @@
                     </p>
                 </article>
 
-                <article>
-                    <h2>Como Funciona a plataforma</h2>
+                <article class="artigo">
+                    <h2 id="comoFunfa">Como Funciona a plataforma</h2>
                     <p>
                         As empresas que se propuserem a coletar os dispositivos eletrônicos se cadastram na plataforma informando
                         seus dados de contato a fim de permitir que o consumidor encontre o local para realizar a devolução desses
@@ -43,11 +84,10 @@
                         O consumidor também pode efetuar seu cadastro para agendar a coleta dos dispositivos em sua residência, caso
                         o parceiro possua mecanismos para efetuar coleta residencial.
                     </p>
-
                 </article>
 
-                <article>
-                    <h2>Nossa Missão</h2>
+                <article class="artigo">
+                    <h2 id="nossaMissao">Nossa Missão</h2>
                     <p>
                         Nós da Enroter acreditamos que com a participação de todos o mundo se torna um lugar melhor, por isso fazemos
                         nosso trabalho com todo amor e carinho.
@@ -57,8 +97,8 @@
                     </p>
                 </article>
 
-                <article>
-                    <h2>O que é Logística Reversa</h2>
+                <article class="artigo">
+                    <h2 id="oqeh">O que é Logística Reversa?</h2>
                     <p>
                         Segundo o <cite>Ministério do Meio Ambiente:</cite> 
                         "A Logística Reversa é um instrumento de desenvolvimento econômico e social caracterizado por um conjunto
@@ -77,8 +117,8 @@
                     </figure>
                 </article>
 
-                <article>
-                    <h2>O consumidor</h2>
+                <article class="artigo">
+                    <h2 id="consumidor">O consumidor</h2>
                     <p>
                         Nós, como consumidores, desempenhamos papel central no processo de logística reversa. São responsabilidades
                         do consumidor:
@@ -90,8 +130,8 @@
                     </p>            
                 </article>
 
-                <article>
-                    <h2>As empresas</h2>
+                <article class="artigo">
+                    <h2 id="empresas">As empresas</h2>
                     <p>
                         As empresas vêm sendo cobradas - não só pelas organizações governamentais, mas pelos próprios
                         consumidores - a assumir um papel mais responsável em relação ao pós-venda de seus produtos.
@@ -106,18 +146,76 @@
             </section>
         </main>
 
-        <footer id="rodape">
-            Onde Estamos:
-            <address>
-                Alameda Sauron da Silva Sauro, Nº9000, Bolha2 - Atlântida, 58848-257.
-                <br>
-                Fone: +00 (00) 2255-8815, das 14:00 até as 14:05.
-            </address>
-            <p> 
-                <em>Copyright: Todos os direitos reservados ©</em>
-            </p>
-            <p>
-                <a href="#cabecalho">[Voltar ao Topo]</a>
+        <!-- Descrição do aside: conterá os links dos parceiros -->
+        <aside class="aside">
+            <div class="flexContainerSide">
+                Nossos Parceiros
+                <div class="flexItemSide">
+                    <p>GL Eletronics</p>
+                    <a href="" class="buttonNav buttonSide">site oficial</a>
+                </div>
+
+                <div class="flexItemSide">
+                    <p>Pilips</p>
+                    <a href="" class="buttonNav buttonSide">site oficial</a>
+                </div>
+
+                <div class="flexItemSide">
+                    <p>Son</p>
+                    <a href="" class="buttonNav buttonSide">site oficial</a>
+                </div>
+
+                <div class="flexItemSide">
+                    <p>Jade</p>
+                    <a href="" class="buttonNav buttonSide">site oficial</a>
+                </div>
+
+                <div class="flexItemSide">
+                    <p>Ruindows</p>
+                    <a href="" class="buttonNav buttonSide">site oficial</a>
+                </div>
+
+                <div class="flexItemSide">
+                    <p>LagOffice</p>
+                    <a href="" class="buttonNav buttonSide">site oficial</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- o footer será dividido em blocos, cada um contendo um tipo de informação -->
+        <footer class="footer">
+            <div class="flexContainerFoot">
+                <div class="flexItemFoot">
+                    Onde Estamos:
+                    <address>
+                        <p>
+                            Alameda Sauron da Silva Sauro, Nº9000, <br> 
+                            Bolha2 - Atlântida, 58848-257. <br>
+                            Próximo ao Estádio das Naves 
+                        </p>
+                    </address>
+                </div>
+    
+                <div class="flexItemFoot">
+                    Contate-nos:
+                    <ul>
+                        <li>Fone: +01 (01) 2255-8815, das 14:00 as 14:05.</li>
+                        <li>Email: Enroter@enroter.com.atl</li>
+                        <li>Caixa Postal: 55525-000</li>
+                    </ul>                       
+                </div>
+    
+                <div class="flexItemFoot">
+                    Ajuda:
+                    <ul>
+                        <li>Trabalhe Conosco</li>
+                        <li>Denuncias</li>
+                        <li>Site do Gov</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Copyright: Todos os direitos reservados ©. Os direitos das imagens utilizadas pertencem aos seus respectivos
+                donos. As mesmas imagens foram utilizadas exclusivamente para fins didáticos.
             </p>
         </footer>
     </body>

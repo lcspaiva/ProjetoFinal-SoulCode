@@ -1,0 +1,38 @@
+#logo{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    /* background-image: url(../../Assets/teste.jpg); */
+    /* background-position: center; */
+    position: static;
+    float: left
+}
+
+#lema{
+    font-family:sans-serif;
+    font-size: xx-large;
+    position: relative;
+    top: 78px;
+    left: 20px;
+    float: left;
+    /* border-color: black; */
+    /* clear: right; */
+}
+
+#imgEnch{
+    background-color: white;
+    height: 150px;
+    width: 480px;
+    float: right;
+    border: 1px solid black;
+    background-image: url(../../Assets/colage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#bannerCorpo{
+    height: 600px;
+    width: 1100px;
+    margin-top: 10px;
+}

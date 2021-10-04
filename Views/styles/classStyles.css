@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+}
+
+/* *********************************************************** */
+/* *********************************************************** */
+/* *********************************************************** */
+/* *********************************************************** */
+        /* informando em qual área do grid ele será colocado */
+                /* SEÇÃO REFERENTE AOS GRIDS*/
+/* *********************************************************** */
+/* *********************************************************** */
+/* *********************************************************** */
+/* *********************************************************** */
+
+/* Criando a grade que vai definir a divisão da página */
+body{
+    display: grid; /* tipo da box*/
+    /* grid-gap: 1rem; espaçamento entre os grids ((Suprimir)) */
+    grid-template-areas:  /* definindo como o a página será dividida em grids*/
+        "header header header"
+        "nav nav nav"
+        "main main aside"
+        "footer footer footer"
+    ;
+    /* 548px 600px  auto; */
+    /*43% 42%  auto */
+    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+/* informando em qual área do grid ele será colocado */
+.header{
+    grid-area: header;
+    height: 150px;
+}
+
+/* informando em qual área do grid ele será colocado */
+.nav{
+    grid-area: nav;
+    height: 35px;
+}
+
+/* informando em qual área do grid ele será colocado */
+.aside{
+    grid-area: aside;
+    width: 200px;
+}
+
+/* informando em qual área do grid ele será colocado */
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+    height: 120px;
+}
+
+/* definindo as cores dos grids */
+.header{
+    background-color: darkgreen;
+    color: white;
+}
+.nav{
+    background-color: darkgreen;
+    color: white;
+    border-top: 3px solid black;
+    border-bottom: 1px solid black;
+}
+.main{
+    background-color: #E7E9E1;
+    color: black;
+}
+.aside{
+    background-color: #d4d4da;
+    color: black;
+}
+.footer{
+    background-color: #424143;
+    color: white;
+}
+
+/* **********************************************/
+/* Definição dos elementos que comporão o aside */
+/* ******************HEADER***********************/
+/* ******************FLEXBOX**********************/
+/* **********************************************/
+.flexboxContainerHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* justify-content: ?; */
+    /* align-items: ?; */
+}
+
+/* definição da "caixa" que conterá o logo */
+.flexboxItemLogo{
+    width: 200px;
+    height: 200px;
+    background-image: url("../../Assets/teste.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: auto;
+    flex-shrink: 3;
+}
+
+/* definição da "caixa" que conterá o lema*/
+.flexboxItemLema{
+    width: 600px;
+    height: 140px;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-left: 60px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* definição da "caixa" que conterá a img de preenchimento */
+.flexboxItemImgEnch{
+    width: 350px;
+    height: 200px;
+    background-image: url("../../Assets/colage.png");
+    background-position: top center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 3;
+}
+
+/* *********************************************************** */
+/* *********************************************************** */
+/* *********************************************************** */
+/* *********************************************************** */
+          /* DEFININDO CARACTERISCAS AOS ITEMS*/
+                /* SEÇÃO REFERENTE AOS ITEMS*/
+/* *********************************************************** */
+/* *********************************************************** */
+/* *********************************************************** */
+/* *********************************************************** */
+/*
+ .itemNavBar{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    border-style: solid;
+    justify-content: center;
+    flex-direction: row;
+}
+*/
+
+/* definindo o flexbox container da barra de navegação */
+.flexContainerNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+/* definindo o flexbox item da barra de navegação */
+.flexItemNav{
+    background-color: darkgreen;
+    /* height: 20px; */
+    /* width: 150px; */
+    /* text-align: center; */
+    margin: 5px;
+    margin-top: 8px;
+    /* border: 1px solid white; */
+    /* border-radius: 10px; */
+    /* /* color: white;  */
+}
+
+/* editando as propriedades do botão de hiperlink */
+a.navLink{
+    text-decoration: none;
+    color: white;
+}
+
+/* definindo a aparêcia dos botões de navegação */
+.buttonNav{
+    background-color: darkgreen;
+    font-size: 16px;
+    padding: 5px 12px;
+    border-radius: 10px;
+    /* border: 2px solid white; */
+    transition-duration: 0.4s;
+}
+
+/* definindo o comportamento do botão quando o mouse passa por cima */
+.buttonNav:hover {
+    background-color: white; /* Green */
+    color: black;
+}
+
+
+/* *********************************************************** */
+/********************** FOOTER  ********************************/
+/* *********************************************************** */
+/* definindo o flexbox para o footer */
+.flexContainerFoot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* definindo os items que irão estar contidor no container do flexboxcontainer do footer */
+.flexItemFoot{
+    width: 20%;
+    height: 80px;
+    margin-right: 70px;
+    padding-right: 20px;
+    border-right: 1px solid white;
+}
+
+/* basicamente define uma lista sem bullets */
+.listaNavBar{
+    list-style-type: none;
+}
+
+/* **********************************************/
+/* Definição dos elementos que comporão o aside */
+/* ******************ASIDE***********************/
+/* **********************************************/
+.flexContainerSide{
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* testar se muda de volta*/
+    justify-content: flex-start; /* testar a melhor opção*/
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.flexItemSide{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    border-bottom: 3px solid rgb(202, 200, 200);
+    font-weight: normal;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+a.buttonSide{
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.buttonSide{
+    background-color: #d4d4da;
+}
+
+.buttonSide:hover {
+    background-color: white; /* Green */
+    color: darkgreen;
+}
+
+/* **********************************************/
+/* Definição dos elementos que comporão o aside */
+/* ******************MAIN***********************/
+/* **********************************************/
+.artigo{
+    font-size: large;
+    color: black;
+    font-weight: normal;
+    height: auto;
+    min-height: 200px;
+    border-bottom: 3px solid darkgreen;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* selecionando todos os h2 que estão dentro de articles */
+article h2{
+    line-height: 1.6;
+    font-weight: bolder;
+}
+
+/* cuidado pode ter efeito colateral */
+/* mirando na lista dentro do MenuIndice */
+/* Editando as propriedades do menu de navegação rápida */
+ul:nth-child(2){
+    list-style-type: none;
+    border-left: 3px solid darkgreen;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.botaoIndice{
+    text-decoration: none;
+    color: darkgreen;
+    font-size: medium;
+}
+
+.botaoIndice:hover{
+    font-size: 20px;
+    color: darkgreen;
+    list-style-type: circle;
+}
+
+/* **********************************************/
+/* ******************FORM************************/
+/* **********************************************/
+/* itens do formulario */
+.fonteDestaque{
+    line-height: 1.6;
+    font-size: large;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+.formulario{
+    margin-left: 10px;
+    font-size: large;
+}
+
+.flexboxContainerForm{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; /* testar se muda de volta*/
+}
+
+.flexboxItemForm{
+    border: 1px solid red;
+    width: 200px;
+    height: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: normal;
+    margin-top: 10px;
+    line-height: 1.5;
+    float: left;
+}
+
+input[type=text], input[type=number], input[type=tel], input[type=email]{
+    width: 20%;
+    padding: 12px 20px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    border: 2px solid darkgreen;
+    border-radius: 4px;
+}
+
+select{
+    width: 24%;
+    padding: 12px 20px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    border: 2px solid darkgreen;
+    border-radius: 4px;
+}
+
+textarea{
+    width: 20%;
+    padding: 12px 20px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    border: 2px solid darkgreen;
+    border-radius: 4px;
+}
+
+legend{
+    font-size: x-large;
+    background-color: darkgreen;
+    border: 1px solid darkgreen;
+    width: 100%;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bordaForm{
+    border: 2px solid darkgreen;
+}
+.buttonForm{
+    color: white;
+}
